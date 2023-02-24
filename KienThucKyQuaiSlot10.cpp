@@ -22,7 +22,7 @@ void input(int a[], int *n){
 	for(i=0;i<*n;i++){
 		printf("a[%d] =", i);
 		//scanf("%d",&a[i]);
-		a[i] - rand()%100;
+		a[i] = rand()%100;
 	}
 }
 void output(int a[],int n){

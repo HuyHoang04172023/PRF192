@@ -53,3 +53,23 @@ main(){
 		}
 	}
 }
+
+
+//Vi du 5 va 6
+#include <stdio.h>
+main (){
+	int a[1000];
+	int n,i,max=a[0],min=a[0];
+	printf("Enter size of array: ");
+	scanf("%d",&n);
+	for (i=0;i<n;i++){
+		printf("a[%d] = ",i);
+		scanf("%d",&a[i]);
+	}
+	for (i=0;i<n;i++) if(a[i]>max) max=a[i];
+	for (i=0;i<n;i++) if(a[i]<min) min=a[i];
+	printf("Max: %d\n", max);
+	printf("Min: %d\n", min);
+	printf("First value: %d\n", a[0]);
+	printf("Final value: %d\n", a[n-1]);
+}

@@ -8,3 +8,4 @@ main (){
 	printf("Tich: %g \n", a * b);	
 	printf("Thuong: %g \n", a / b);	
 }
+

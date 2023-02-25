@@ -73,3 +73,26 @@ main (){
 	printf("First value: %d\n", a[0]);
 	printf("Final value: %d\n", a[n-1]);
 }
+
+//Vi du 7 va 8
+#include <stdio.h>
+main (){
+	int a[1000];
+	int n,i,trungbinh=0;
+	float average=0;
+	printf("Enter size of array: ");
+	scanf("%d",&n);
+	for (i=0;i<n;i++){
+		printf("a[%d] = ",i);
+		scanf("%d",&a[i]);
+	}
+	for (i=0;i<n;i++) {
+		if (a[i]%2==0) {
+			average=average + a[i];
+			trungbinh++;
+		}
+	}
+	average = average/trungbinh;
+//	average = average/n; //chia trung binh ca mang
+	printf("The average value of the array: %f\n", average);
+}

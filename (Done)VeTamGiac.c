@@ -11,9 +11,7 @@ main(){
    				printf("Ve tam giac sao vuong can:");
    				scanf("%d",&n);
    				for(i = 1; i <= n; i++) {
-      				for(j = 1; j <= i; j++)
-         				printf("* ");
- 			
+      				for(j = 1; j <= i; j++) printf("* ");
       				printf("\n");
 			 	}
 			 	break;
@@ -24,12 +22,8 @@ main(){
 				printf("Ve tam giac sao vuong can:");
 				scanf("%d",&n);
 				for(i = n; i >= 0; i--) {
-					for(j=0; j<i ; j++)
-						printf("  ");
-					
-					for(j=i; j < n; j++)
-						printf(" *");
-						
+					for(j=0; j<i ; j++) printf("  ");
+					for(j=i; j < n; j++) printf(" *");
 					printf("\n");
 			    }
 			    break;  
@@ -40,12 +34,8 @@ main(){
 				printf("Ve tam giac sao vuong can:");
 				scanf("%d",&n);
 				for(i = 0; i < n; i++) {
-					for(j=0; j<i; j++)
-						printf("  "); 
-						
-					for(j=i; j < n; j++)
-						printf(" *");
-						
+					for(j=0; j<i; j++) printf("  "); 
+					for(j=i; j < n; j++) printf(" *");
 					printf("\n");
 				}
 				break;
@@ -56,8 +46,7 @@ main(){
 				printf("Ve tam giac sao vuong can:");
    				scanf("%d",&n);
    				for(i = n; i >= 1; i--) {
-   					for(j = 1; j <= i; j++)
-   						printf("* ");
+   					for(j = 1; j <= i; j++) printf("* ");
    					printf("\n");
 				}
 				break;

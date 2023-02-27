@@ -22,7 +22,4 @@ int main () {
 	printf("wrong n!\n");goto e;}
 	printf("the fibonacci sequence: ");
 	(fibo(n));
-	
-	
-	
 }

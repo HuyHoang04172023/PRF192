@@ -19,10 +19,8 @@ int main(){
 	printf("Enter the length of the square: ");
 	scanf("%d", &n);
 	for(i=0;i<n;i++){ 
-		for(j=0;j<n;j++) {
-		if(i==0 || i==n-1 || j==0 || j==n-1) printf ("* "); 
-		else printf("  ");
-		}
+		for(j=0;j<n;j++) printf ((i==0 || i==n-1 || j==0 || j==n-1)?"* ":"  "); 
 		printf("\n");
 	}
 }
+

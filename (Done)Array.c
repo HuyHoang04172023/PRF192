@@ -27,13 +27,11 @@ main(){
 		printf("a[%d] =", i);
 		scanf("%d", &a[i]);
 	}
-	for(i=0;i<n;i++) {
-		if (i==n-1) printf("%d" ,a[i]);
-		else printf("%d : ",a[i]);
-	}
+	for(i=0;i<n;i++) printf(i==0?"%d ":": %d " ,a[i]);
 }
 
-//Vi du 3 va 4
+
+//Vi du 3
 #include <stdio.h>
 main(){
 	int n,i;
@@ -44,13 +42,22 @@ main(){
 		printf("a[%d] =", i);
 		scanf("%d", &a[i]);
 	}
-	for(i=0;i<n;i++) {
-		if (a[i]%2==0) {
-			if () printf("%d ",a[i]);
-			else printf("%d :",a[i]);
-		}
-	}
+	for(i=0;i<n;i++) printf("%d :",a[i]);
 }
+
+
+//Vi du 4
+#include <stdio.h>
+main(){
+	int n,i;
+	int a[1000];
+	printf("Size of array: ");
+	scanf("%d", &n);
+	for (i=0;i<n;i++) printf("a[%d] =", i),scanf("%d", &a[i]);
+	int chan=0;
+	for(i=0;i<n;i++) if (a[i]%2==0) printf(chan==0?"%d ":": %d ",a[i]),chan++;
+}
+
 
 
 //Vi du 5 va 6
